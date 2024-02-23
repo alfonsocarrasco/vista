@@ -18,7 +18,7 @@ class Login extends Component
 
     public function mount()
     {
-        $this->fill(['email' => 'dev@AlfonsoCarrasco.com', 'password' => 'Hiring Me!!🚀']);
+        $this->fill(['email' => 'dev@AlfonsoCarrasco.com', 'password' => 'Hiring Me!!']);
     }
 
     public function login()

@@ -14,12 +14,10 @@
                        sidenav-close></i>
                     <a class="block px-8 py-6 m-0 text-size-sm whitespace-nowrap text-slate-700" href="{{ url('') }}"
                        target="_blank">
-                        <img src="../assets/img/logo-ct.png"
-                             class="inline h-full max-w-full transition-all duration-200 ease-nav-brand max-h-8"
-                             alt="main_logo"/>
-                        <span
-                            class="{{ (Request::is('rtl') ? 'mr-1' : 'ml-1') }} font-semibold transition-all duration-200 ease-nav-brand">Soft
-          UI Dashboard</span>
+                        <p class="text-size-xl">🛸
+                            <span class="text-size-sm font-semibold transition-all duration-200 ease-nav-brand">Alfonso Project</span>
+                        </p>
+
                     </a>
                 </div>
 

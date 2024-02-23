@@ -18,10 +18,16 @@ return new class extends Migration
             $table->string('name');
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
-            $table->string('password');
+            $table->string('password')->nullable();
             $table->string('phone')->nullable();
             $table->string('location')->nullable();
             $table->text('about')->nullable();
+            $table->text('google_id')->nullable();
+            $table->text('google_token')->nullable();
+            $table->text('google_avatar')->nullable();
+            $table->text('facebook_id')->nullable();
+            $table->text('facebook_token')->nullable();
+            $table->text('facebook_avatar')->nullable();
             $table->rememberToken();
             $table->timestamps();
         });

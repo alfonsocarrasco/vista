@@ -4040,5 +4040,9 @@ h6 {
 }
 
 .background-astro {
-    background-color: #1f0a55;
+    background-color: #0c002d;
+}
+
+.bg-developer-purple-gradiant {
+  background-image: linear-gradient(108deg, #b70497, #21d4fd)
 }

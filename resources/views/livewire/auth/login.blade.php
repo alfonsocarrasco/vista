@@ -14,7 +14,7 @@
                                     <p class="mb-0">Create a new acount<br></p>
                                     <p class="mb-4">OR Sign in with these credentials:</p>
                                     <p class="mb-0">Email: <b>dev@AlfonsoCarrasco.com</b></p>
-                                    <p class="mb-0">Password: <b>Hiring Me!!🚀</b></p>
+                                    <p class="mb-0">Password: <b>Hiring Me!!</b></p>
                                 </div>
 
                                 <div class="flex-auto p-6">
@@ -56,7 +56,7 @@
 
                                         <div class="text-center">
                                             <button type="submit"
-                                                class="inline-block w-full px-6 py-3 mt-6 mb-0 font-bold text-center text-white uppercase align-middle transition-all bg-transparent border-0 rounded-lg cursor-pointer shadow-soft-md bg-x-25 bg-150 leading-pro text-size-xs ease-soft-in tracking-tight-soft bg-gradient-cyan hover:scale-102 hover:shadow-soft-xs active:opacity-85">Sign
+                                                class="inline-block w-full px-6 py-3 mt-6 mb-0 font-bold text-center text-white uppercase align-middle transition-all bg-transparent border-0 rounded-lg cursor-pointer shadow-soft-md bg-x-25 bg-150 leading-pro text-size-xs ease-soft-in tracking-tight-soft bg-developer-purple-gradiant hover:scale-102 hover:shadow-soft-xs active:opacity-85">Sign
                                                 in</button>
                                         </div>
                                     </form>
@@ -64,20 +64,19 @@
                                 <div
                                     class="p-6 px-1 pt-0 text-center bg-transparent border-t-0 border-t-solid rounded-b-2xl lg:px-2">
                                     <p class="mx-auto mb-6 leading-normal text-size-sm">
-                                        Forgot your password? Reset your password
-                                        <a href="{{ route('forgot-password') }}"
-                                            class="relative z-10 font-semibold text-transparent bg-gradient-cyan bg-clip-text">here</a>.<br />
+                                        Hey!!!</br>
                                         Don't have an account?
                                         <a href="{{ route('register') }}"
                                             class="relative z-10 font-semibold text-transparent bg-gradient-cyan bg-clip-text">Sign
-                                            up</a>.
+                                            up 🛸</a>.
                                     </p>
                                 </div>
                             </div>
+                            <!-- Social Connect FB -->
                             <div class="flex flex-wrap px-3 -mx-3 my-5    sm:px-6 xl:px-12">
                                 <div class="w-3/12 max-w-full px-1 ml-auto flex-0">
                                     <a class="inline-block w-full px-6 py-3 mb-4 font-bold text-center text-gray-200 uppercase align-middle transition-all bg-white border border-gray-200 border-solid rounded-lg shadow-none cursor-pointer hover:scale-110 leading-pro text-size-xs ease-soft-in tracking-tight-soft bg-150 bg-x-25"
-                                       href="javascript:;">
+                                       href="{{ route('socialConnect.FB') }}">
                                         <svg width="24px" height="32px" viewBox="0 0 64 64" version="1.1"
                                              xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink32">
                                             <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -92,9 +91,10 @@
                                         </svg>
                                     </a>
                                 </div>
+                                <!-- Social Connect GG -->
                                 <div class="w-3/12 max-w-full px-1  mr-auto flex-0">
                                     <a class="inline-block w-full px-6 py-3 mb-4 font-bold text-center text-gray-200 uppercase align-middle transition-all bg-white border border-gray-200 border-solid rounded-lg shadow-none cursor-pointer hover:scale-110 leading-pro text-size-xs ease-soft-in tracking-tight-soft bg-150 bg-x-25"
-                                       href="javascript:;">
+                                       href="{{ route('socialConnect.GG') }}">
                                         <svg width="24px" height="32px" viewBox="0 0 64 64" version="1.1"
                                              xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                             <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">

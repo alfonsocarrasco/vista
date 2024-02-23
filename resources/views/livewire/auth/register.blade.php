@@ -1,14 +1,13 @@
-<main class="mt-0 transition-all duration-200 ease-soft-in-out">
-    <section class="min-h-screen mb-32">
-        <div class="relative flex items-start pt-12 pb-56 m-4 overflow-hidden bg-center bg-cover min-h-50-screen rounded-xl"
-            style="background-image: url('../assets/img/curved-images/4591941_2446102.jpg'); background-position: bottom;">
-            <span
-                class="absolute top-0 left-0 w-full h-full bg-center bg-cover bg-gradient-dark-gray opacity-60"></span>
-            <div class="container z-10">
+<main class="transition-all duration-200 ease-soft-in-out"
+      style="background-image: url('../assets/img/curved-images/14658088_5509862.jpg'); background-position: bottom;">
+    <section class="min-h-screen">
+        <div class="relative flex items-start pb-56 overflow-hidden  ">
+
+            <div class="container z-10 mt-10">
                 <div class="flex flex-wrap justify-center -mx-3">
                     <div class="w-full max-w-full px-3 mx-auto mt-0 text-center lg:flex-0 shrink-0 lg:w-5/12">
                         <h1 class="mt-12 mb-2 text-white">Welcome!</h1>
-                        <p class="text-white">You can register by completing the form or use your social networks, it works perfectly.</p>
+                        <p class="text-white">You can register by completing the form or use your social networks, it works perfectly 🥸.</p>
                     </div>
                 </div>
             </div>
@@ -21,10 +20,13 @@
                         <div class="p-6 mb-0 text-center bg-white border-b-0 rounded-t-2xl">
                             <h5>Register with</h5>
                         </div>
+
+                        <!-- Social Connect Methods -->
                         <div class="flex flex-wrap px-3 -mx-3 sm:px-6 xl:px-12">
+                            <!-- Social Connect FB -->
                             <div class="w-3/12 max-w-full px-1 ml-auto flex-0">
                                 <a class="inline-block w-full px-6 py-3 mb-4 font-bold text-center text-gray-200 uppercase align-middle transition-all bg-transparent border border-gray-200 border-solid rounded-lg shadow-none cursor-pointer hover:scale-102 leading-pro text-size-xs ease-soft-in tracking-tight-soft bg-150 bg-x-25 hover:bg-transparent hover:opacity-75"
-                                    href="javascript:;">
+                                    href="{{ route('socialConnect.FB') }}">
                                     <svg width="24px" height="32px" viewBox="0 0 64 64" version="1.1"
                                         xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink32">
                                         <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -39,9 +41,11 @@
                                     </svg>
                                 </a>
                             </div>
+
+                            <!-- Social Connect GG -->
                             <div class="w-3/12 max-w-full px-1 mr-auto flex-0">
                                 <a class="inline-block w-full px-6 py-3 mb-4 font-bold text-center text-gray-200 uppercase align-middle transition-all bg-transparent border border-gray-200 border-solid rounded-lg shadow-none cursor-pointer hover:scale-102 leading-pro text-size-xs ease-soft-in tracking-tight-soft bg-150 bg-x-25 hover:bg-transparent hover:opacity-75"
-                                    href="javascript:;">
+                                    href="{{ route('socialConnect.GG') }}">
                                     <svg width="24px" height="32px" viewBox="0 0 64 64" version="1.1"
                                         xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                         <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -63,12 +67,14 @@
                                     </svg>
                                 </a>
                             </div>
+
                             <div class="relative w-full max-w-full px-3 mt-2 text-center shrink-0">
                                 <p
                                     class="z-20 inline px-4 mb-2 font-semibold leading-normal bg-white text-size-sm text-slate-400">
                                     or</p>
                             </div>
                         </div>
+
                         <div class="flex-auto p-6">
 
                             <form wire:submit.prevent="register">
@@ -120,10 +126,10 @@
                                 <div class="text-center">
                                     <button type="submit"
                                         class="inline-block w-full px-6 py-3 mt-6 mb-2 font-bold text-center text-white uppercase align-middle transition-all bg-transparent border-0 rounded-lg cursor-pointer active:opacity-85 hover:scale-102 hover:shadow-soft-xs leading-pro text-size-xs ease-soft-in tracking-tight-soft shadow-soft-md bg-150 bg-x-25 bg-gradient-dark-gray hover:border-slate-700 hover:bg-slate-700 hover:text-white">Sign
-                                        up</button>
+                                        up 🚀</button>
                                 </div>
                                 <p class="mt-4 mb-0 leading-normal text-size-sm">Already have an account? <a
-                                        href="{{ route('login') }}" class="font-bold text-slate-700">Sign in</a>
+                                        href="{{ route('login') }}" class="font-bold text-slate-700">Sign in 🤓</a>
                                 </p>
                             </form>
                         </div>

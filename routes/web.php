@@ -1,5 +1,7 @@
 <?php
 
+use App\Models\User;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 use App\Http\Livewire\Auth\ForgotPassword;
@@ -18,6 +20,7 @@ use App\Http\Livewire\LaravelExamples\UserProfile;
 use App\Http\Livewire\LaravelExamples\UserManagement;
 use App\Http\Livewire\VirtualReality;
 use Illuminate\Http\Request;
+use Laravel\Socialite\Facades\Socialite;
 
 /*
 |--------------------------------------------------------------------------
@@ -32,6 +35,56 @@ use Illuminate\Http\Request;
 
 Route::get('/', function () {
     return redirect('/login');
+});
+
+// Route Auth Google
+Route::get('/google-auth/redirect', function () {
+    return Socialite::driver('google')->redirect();
+})->name('socialConnect.GG');
+
+Route::get('/google-auth/callback', function () {
+    $user = Socialite::driver('google')->stateless()->user();
+
+    $fields = [
+        'name' => $user->name,
+        'email'=> $user->email,
+        'google_id' => $user->id,
+        'google_token' => $user->token,
+        'google_avatar' => $user->avatar
+    ];
+
+    $user = User::updateOrcreate([
+        'email' => $user->email,
+    ], $fields);
+
+    Auth::login($user);
+    return redirect('/');
+
+});
+
+// Route Auth Facebook
+Route::get('/facebook-auth/redirect', function (){
+    return Socialite::driver('facebook')->redirect();
+})->name('socialConnect.FB');
+
+Route::get('/facebook-auth/callback', function() {
+    $user = Socialite::driver('facebook')->stateless()->user();
+
+    $fields = [
+        'name' => $user->name,
+        'email'=> $user->email,
+        'facebook_id' => $user->id,
+        'facebook_token' => $user->token,
+        'facebook_avatar' => $user->avatar
+    ];
+
+    $user = User::updateOrcreate([
+        'email' => $user->email,
+    ], $fields);
+
+
+    Auth::login($user);
+    return redirect('/');
 });
 
 Route::middleware('guest')->group(function () {
