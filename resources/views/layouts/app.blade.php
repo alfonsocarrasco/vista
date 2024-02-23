@@ -44,8 +44,6 @@
                     </div>
                 </main>
             @endif
-
-            @include('components.plugins.fixed-plugin')
         @endif
     @endauth
 

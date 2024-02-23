@@ -3128,7 +3128,7 @@ h6 {
 
 .after\:font-awesome::after {
   content: var(--tw-content);
-  font-family: FontAwesome;
+  font-family: FontAwesome, serif;
 }
 
 .after\:text-size-fa-check::after {
